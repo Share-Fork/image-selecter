@@ -50,7 +50,8 @@
             this.el = _config.el || function () {
                 var input = document.createElement("INPUT");
                 input.type = 'file';
-                input.accept = 'image/png,image/jpeg,image/gif';
+                input.accept = 'image/*';
+                //input.accept = 'image/png,image/jpeg,image/gif';
                 //input.capture = 'camera';
                 return input;
             }();
